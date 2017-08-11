@@ -154,7 +154,7 @@ class KNearestNeighbor(object):
     y_pred = np.zeros(num_test)
     sample = np.argsort(dists[1])
     parak = int(k)
-    print parak
+    # print parak
     # print(sample[-5:])
     # print sample[sample<16]
     for i in xrange(num_test):
@@ -174,7 +174,7 @@ class KNearestNeighbor(object):
       closest_lable = np.zeros(parak)
       for j in xrange(parak):
         closest_lable[j] = self.y_train[closest_y[j]]
-      print closest_lable
+      # print closest_lable
       #########################################################################
       # Done:                                                                 #
       # Now that you have found the labels of the k nearest neighbors, you    #
@@ -187,7 +187,7 @@ class KNearestNeighbor(object):
         buc[ent]+=1
       t2 = np.argsort(buc)
       # print(buc)
-      print(t2[-1])
+      # print(t2[-1])
       y_pred[i] = t2[-1]
 
       #########################################################################
